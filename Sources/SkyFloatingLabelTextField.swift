@@ -133,7 +133,7 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
     }
 
     /// A UIFont value that determines the text font of the title label
-    @objc dynamic open var titleFont: UIFont = UIFont(name: "Poppins-SemiBold", size: 13) ?? UIFont.systemFont(ofSize: 13) {
+    @objc dynamic open var titleFont: UIFont = UIFont(name: "Poppins-SemiBold", size: 13)!{
         didSet {
             updateTitleLabel()
         }
